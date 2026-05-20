@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Shekhar</a>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-text">
+                <p class="tag">Web Developer Intern</p>
+                <h1>Hi, I am <span>Shekhar</span></h1>
+                <p>
+                    I build clean, responsive websites using HTML, CSS, and JavaScript.
+                    I enjoy turning simple ideas into useful and attractive web pages.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <img src="./img 1.jpg" alt="Portfolio profile">
+                <div>
+                    <h2>Frontend Learner</h2>
+                    <p>HTML &bull; CSS &bull; JavaScript</p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="section about" id="about">
+            <div>
+                <p class="section-label">About Me</p>
+                <h2>Creative web developer focused on simple, useful design.</h2>
+            </div>
+            <p>
+                I am learning web development and practicing by building responsive layouts,
+                interactive components, and beginner-friendly projects. My goal is to create
+                websites that look modern, load quickly, and are easy to use.
+            </p>
+        </section>
+
+        <section class="section" id="skills">
+            <p class="section-label">Skills</p>
+            <h2>What I Work With</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Responsive Design</div>
+                <div class="skill-card">GitHub</div>
+                <div class="skill-card">Problem Solving</div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <p class="section-label">Projects</p>
+            <h2>Featured Work</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80"
+                        alt="Portfolio project">
+                    <div>
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive personal portfolio with sections for skills, projects, resume, and contact.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=700&q=80"
+                        alt="Landing page project">
+                    <div>
+                        <h3>Landing Page</h3>
+                        <p>A clean landing page layout with modern spacing, call-to-action buttons, and feature blocks.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80"
+                        alt="Calculator project">
+                    <div>
+                        <h3>Calculator App</h3>
+                        <p>A basic calculator concept using JavaScript events, operators, and a simple grid layout.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section resume">
+            <div>
+                <p class="section-label">Resume</p>
+                <h2>Download My Resume</h2>
+                <p>Add your resume PDF as <strong>resume.pdf</strong> inside this folder and this button will work.</p>
+            </div>
+            <a href="resume.pdf" class="btn primary" download>Download Resume</a>
+        </section>
+
+        <section class="section contact" id="contact">
+            <p class="section-label">Contact</p>
+            <h2>Let us work together</h2>
+            <div class="contact-box">
+                <p><strong>Email:</strong> shekhar@example.com</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Location:</strong> India</p>
+                <button class="btn primary" id="messageBtn">Send Message</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Shekhar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

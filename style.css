@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f7f3ed;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.header {
+  background:
+    linear-gradient(rgba(12, 18, 32, 0.78), rgba(12, 18, 32, 0.82)),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80")
+      center/cover;
+  color: white;
+  min-height: 92vh;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 24px 20px;
+}
+
+.logo {
+  color: #fb923c;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.nav-links a:hover {
+  color: #fb923c;
+}
+
+.menu-btn {
+  background: transparent;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  display: none;
+  font-size: 28px;
+}
+
+.hero {
+  align-items: center;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1.2fr 0.8fr;
+  margin: 0 auto;
+  max-width: 1120px;
+  min-height: calc(92vh - 84px);
+  padding: 40px 20px 80px;
+}
+
+.tag,
+.section-label {
+  color: #fb923c;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 7vw, 72px);
+  line-height: 1.05;
+  margin: 14px 0 20px;
+}
+
+.hero h1 span {
+  color: #fb923c;
+}
+
+.hero-text p {
+  max-width: 620px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.btn {
+  border: 2px solid #fb923c;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 800;
+  padding: 12px 20px;
+  transition: 0.2s;
+}
+
+.btn.primary {
+  background: #fb923c;
+  color: #111827;
+}
+
+.btn.secondary {
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero-card img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.hero-card div {
+  padding: 22px;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 72px 20px;
+}
+
+.section h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.15;
+  margin: 8px 0 24px;
+}
+
+.about {
+  align-items: start;
+  display: grid;
+  gap: 34px;
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.skills-grid,
+.project-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.skills-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-card {
+  background: white;
+  border-left: 5px solid #0f766e;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  font-weight: 800;
+  padding: 24px;
+}
+
+.project-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+  overflow: hidden;
+}
+
+.project-card img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.project-card div {
+  padding: 22px;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.resume {
+  align-items: center;
+  background: #0f766e;
+  color: white;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  max-width: none;
+  padding-left: max(20px, calc((100% - 1120px) / 2));
+  padding-right: max(20px, calc((100% - 1120px) / 2));
+}
+
+.resume .section-label {
+  color: #fed7aa;
+}
+
+.contact-box {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  display: grid;
+  gap: 12px;
+  padding: 28px;
+}
+
+.contact-box .btn {
+  justify-self: start;
+  margin-top: 10px;
+}
+
+.footer {
+  background: #111827;
+  color: white;
+  padding: 24px 20px;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    background: #111827;
+    display: none;
+    left: 0;
+    padding: 18px 20px;
+    position: absolute;
+    right: 0;
+    top: 76px;
+  }
+
+  .nav-links.show {
+    display: grid;
+    gap: 14px;
+  }
+
+  .hero,
+  .about,
+  .project-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 20px;
+  }
+
+  .resume {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
